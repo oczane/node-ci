@@ -1,9 +1,0 @@
--#!/bin/sh
-ssh vagrant@192.168.0.2 <<EOF
- cd /home/vagrant/node-ci/
- git pull
- nvm use 6.9.1
- npm install --production
- pm2 restart all
- exit
-EOF
